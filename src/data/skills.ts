@@ -6,12 +6,14 @@ export interface Skill {
 
 export interface SkillCategory {
   category: string;
+  description: string;
   skills: Skill[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
     category: "Languages",
+    description: "Core languages I reach for to build reliable, type-safe software.",
     skills: [
       { name: "TypeScript", level: 90 },
       { name: "JavaScript", level: 92 },
@@ -21,6 +23,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Frontend",
+    description: "Building accessible, responsive interfaces and rich interactions.",
     skills: [
       { name: "React", level: 92 },
       { name: "Material UI", level: 85 },
@@ -30,6 +33,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Backend",
+    description: "Designing APIs and services that stay fast and maintainable.",
     skills: [
       { name: "Node.js", level: 88 },
       { name: "Express", level: 85 },
@@ -39,6 +43,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Cloud & DevOps",
+    description: "Shipping, automating, and monitoring deployments with confidence.",
     skills: [
       { name: "AWS", level: 70 },
       { name: "Docker", level: 75 },
@@ -48,6 +53,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     category: "Databases",
+    description: "Modeling and querying data across relational and document stores.",
     skills: [
       { name: "PostgreSQL", level: 80 },
       { name: "MongoDB", level: 82 },
