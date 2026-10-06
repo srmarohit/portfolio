@@ -27,7 +27,10 @@ import { fadeInUp, staggerContainer } from "../../animations/variants";
 type AccentColor = "primary" | "info" | "success" | "warning" | "secondary";
 
 // Cycled by category index so the palette/icon pairing stays stable if categories are added later.
-const accentPalette: { color: AccentColor; Icon: ComponentType<SvgIconProps> }[] = [
+const accentPalette: {
+  color: AccentColor;
+  Icon: ComponentType<SvgIconProps>;
+}[] = [
   { color: "primary", Icon: CodeRoundedIcon },
   { color: "info", Icon: WebRoundedIcon },
   { color: "success", Icon: DnsRoundedIcon },

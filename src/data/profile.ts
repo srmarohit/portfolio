@@ -21,12 +21,12 @@ export const profile: Profile = {
   tagline: "Building reliable, scalable web applications end to end.",
   bio: "I am a software engineer who enjoys turning complex problems into simple, elegant, and maintainable solutions. I specialize in building full-stack web applications with React, Node.js, and cloud-native tooling, and I care deeply about clean architecture, performance, and developer experience.",
   location: "Bengaluru, India",
-  avatarUrl: "/avatar-placeholder.svg",
-  resumeUrl: "/resume-placeholder.pdf",
+  avatarUrl: "/avatar.jpeg",
+  resumeUrl: "/resume.pdf",
   email: "rohit.sharma@example.com",
-  whatsappNumber: "910000000000",
+  whatsappNumber: "918103801661",
   social: {
-    github: "https://github.com/rohit-placeholder",
-    linkedin: "https://linkedin.com/in/rohit-placeholder",
+    github: "https://github.com/srmarohit",
+    linkedin: "https://linkedin.com/in/srmarohit",
   },
 };
