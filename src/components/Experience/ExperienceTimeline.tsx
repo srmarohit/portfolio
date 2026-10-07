@@ -30,7 +30,10 @@ export function ExperienceTimeline() {
       <Timeline position="alternate">
         {experience.map((entry) => (
           <TimelineItem key={entry.id}>
-            <TimelineOppositeContent color="text.secondary">
+            <TimelineOppositeContent
+              color="text.secondary"
+              sx={{ textAlign: "left" }}
+            >
               {entry.startDate} - {entry.endDate}
             </TimelineOppositeContent>
             <TimelineSeparator>
@@ -39,8 +42,8 @@ export function ExperienceTimeline() {
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>
-              <Paper elevation={2} sx={{ p: 2.5 }}>
+            <TimelineContent sx={{ textAlign: "left" }}>
+              <Paper elevation={2} sx={{ p: 2.5, textAlign: "left" }}>
                 <Typography variant="h6" sx={{ fontWeight: 600 }}>
                   {entry.role}
                 </Typography>

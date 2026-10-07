@@ -6,6 +6,8 @@ export interface Profile {
   bio: string;
   location: string;
   avatarUrl: string;
+  heroImageUrl: string;
+  heroImageAlt: string;
   resumeUrl: string;
   email: string;
   whatsappNumber: string; // E.164 format without '+', e.g. 919876543210
@@ -22,6 +24,8 @@ export const profile: Profile = {
   bio: "I am a software engineer who enjoys turning complex problems into simple, elegant, and maintainable solutions. I specialize in building full-stack web applications with React, Node.js, and cloud-native tooling, and I care deeply about clean architecture, performance, and developer experience.",
   location: "Bengaluru, India",
   avatarUrl: "/avatar.jpeg",
+  heroImageUrl: "/mern-windows-logo.svg",
+  heroImageAlt: "MERN stack logo styled like the Windows logo",
   resumeUrl: "/resume.pdf",
   email: "rohit.sharma@example.com",
   whatsappNumber: "918103801661",

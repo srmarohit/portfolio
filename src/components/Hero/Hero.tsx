@@ -2,7 +2,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import { profile } from "../../data/profile";
-import { fadeInUp, staggerContainer } from "../../animations/variants";
+import { fadeInUp, scaleIn, staggerContainer } from "../../animations/variants";
 
 export function Hero() {
   return (
@@ -17,7 +17,17 @@ export function Hero() {
       }}
     >
       <Box
-        sx={{ maxWidth: "lg", mx: "auto", px: { xs: 3, md: 6 }, width: "100%" }}
+        sx={{
+          maxWidth: "lg",
+          mx: "auto",
+          px: { xs: 3, md: 6 },
+          width: "100%",
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: { xs: 6, md: 4 },
+        }}
       >
         <motion.div
           initial="hidden"
@@ -78,6 +88,51 @@ export function Hero() {
               </Button>
             </Stack>
           </motion.div>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={scaleIn}
+          style={{ flexShrink: 0, perspective: 900 }}
+        >
+          <Box
+            sx={{
+              width: { xs: 220, sm: 260, md: 320 },
+              height: { xs: 220, sm: 260, md: 320 },
+              borderRadius: "50%",
+              p: "6px",
+              background:
+                "linear-gradient(135deg, #47A248 0%, #61DAFB 50%, #83CD29 100%)",
+              transform: "perspective(900px) rotateX(8deg) rotateY(-10deg)",
+              boxShadow: [
+                "18px 28px 20px -12px rgba(0,0,0,0.55)",
+                "8px 14px 30px rgba(0,0,0,0.4)",
+                "0 0 45px rgba(97,218,251,0.35)",
+                "inset 0 2px 4px rgba(255,255,255,0.4)",
+              ].join(", "),
+            }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                height: "100%",
+                borderRadius: "50%",
+                overflow: "hidden",
+                bgcolor: "background.paper",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "inset 0 2px 8px rgba(0,0,0,0.25)",
+              }}
+            >
+              <Box
+                component="img"
+                src={profile.heroImageUrl}
+                alt={profile.heroImageAlt}
+                sx={{ width: "82%", height: "82%", display: "block" }}
+              />
+            </Box>
+          </Box>
         </motion.div>
       </Box>
     </Box>
