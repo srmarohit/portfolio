@@ -1,0 +1,12 @@
+<svg width="320" height="320" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MERN stack logo styled like the Windows logo">
+  <g transform="rotate(-8 110 110)">
+    <rect x="10" y="10" width="90" height="90" rx="8" fill="#47A248" />
+    <rect x="110" y="10" width="90" height="90" rx="8" fill="#303030" />
+    <rect x="10" y="110" width="90" height="90" rx="8" fill="#61DAFB" />
+    <rect x="110" y="110" width="90" height="90" rx="8" fill="#83CD29" />
+    <text x="55" y="72" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">M</text>
+    <text x="155" y="72" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">E</text>
+    <text x="55" y="172" font-size="48" font-weight="700" fill="#0b2b33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">R</text>
+    <text x="155" y="172" font-size="48" font-weight="700" fill="#1c3005" text-anchor="middle" font-family="Arial, Helvetica, sans-serif">N</text>
+  </g>
+</svg>
